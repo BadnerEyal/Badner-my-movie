@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/FloralWhite"
+    android:id="@+id/LinearLayoutallmovie" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+         >
+
+        <ImageView
+            android:id="@+id/imageViewpic"
+            android:layout_width="100dp"
+            android:layout_height="80dp"
+            
+            android:layout_marginTop="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textViewnamemovie"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+                android:text="Large Text"
+                android:maxLines="1"
+                android:ellipsize="marquee"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <RatingBar
+                android:id="@+id/ratingBarmyrat"
+                style="@style/foodRatingBar"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="10dp"
+                android:isIndicator="true" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
